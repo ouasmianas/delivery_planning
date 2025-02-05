@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="stock_picking_view_form_inherit_delivery_planning" model="ir.ui.view">
+            <field name="name">stock.picking.view.form.inherit.delivery_planning</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//header" position="inside">
+                    <button name="action_open_delivery_planning_wizard"
+                            string="Plan Delivery"
+                            type="object"
+                            class="oe_highlight"
+                            invisible="state != 'assigned'"
+                            />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

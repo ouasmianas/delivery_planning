@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="delivery_planning_wizard_view_form" model="ir.ui.view">
+            <field name="name">delivery.planning.wizard.view.form</field>
+            <field name="model">delivery.planning.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="picking_id" readonly="1"/>
+                            <field name="planned_delivery_date"/>
+                        </group>
+                        <footer>
+                            <button name="action_confirm" string="Confirm" type="object" class="oe_highlight"/>
+                            <button string="Cancel" class="btn btn-secondary" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
