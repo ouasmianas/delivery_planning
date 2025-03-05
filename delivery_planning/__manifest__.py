@@ -8,7 +8,6 @@
     'category': 'Inventory',
     "author": "OUASMI Anas",
     'depends': ['stock'],
-    'license': 'LGPL-3',
     'data': [
         'security/ir.model.access.csv',
         'views/stock_picking_views.xml',
@@ -22,5 +21,8 @@
     'installable': True,
     'application': False,
     'auto_install': False,
+    'license': 'OPL-1',
+    'price': 16,
+    'currency': 'USD',
 
 }
